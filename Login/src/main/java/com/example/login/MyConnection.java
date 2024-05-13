@@ -13,11 +13,5 @@ public class MyConnection {
         con = DriverManager.getConnection(url, "root", "");
         return con;
     }
-
-    public static void main(String[] args) throws SQLException {
-        if(getMyConnection()!=null){
-            System.out.println("Connection Successful");
-        }
-    }
 }
 
